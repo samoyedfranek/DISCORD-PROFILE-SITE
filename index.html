@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <title>Discord</title>
+        <link rel="stylesheet" href="main.css" />
+
+        <!-- Boxicons CSS -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- Production -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+    </head>
+
+    <body id="body">
+        <center>
+            <div id="discord" class="discord">
+                <div class="banner">
+                    <img
+                        alt=""
+                        class="baner1"
+                        src="https://cdn.discordapp.com/banners/622714126841675778/a_fae01a4837047f272e211ef47ee8913a.gif?size=1024"
+                    />
+                    <img
+                        alt=""
+                        class="baner"
+                        src="https://cdn.discordapp.com/banners/622714126841675778/a_fae01a4837047f272e211ef47ee8913a.gif?size=1024"
+                    />
+                </div>
+                <div class="line"></div>
+                <div class="logo">
+                    <img
+                        alt=""
+                        class="image border-image"
+                        src="https://cdn.discordapp.com/avatars/622714126841675778/a_da8675342340fece3c09762c37f34615.gif?size=2048"
+                    />
+                    <div class="online border-online"></div>
+                    <img
+                        alt=""
+                        src="https://static.wikia.nocookie.net/hypesquad/images/4/4f/BalanceLogo.png/"
+                        class="badge"
+                    />
+                    <img
+                        alt=""
+                        src="https://static.wikia.nocookie.net/discord/images/e/ea/Nitro.png"
+                        class="nitro"
+                    />
+                    <img
+                        alt=""
+                        src="https://preview.redd.it/qq911bvdqwu51.gif?format=png8&s=d0a9ab9564b6c5e59fd83bbb1e95539a6722801c"
+                        class="nitroboost"
+                    />
+                    <div class="name">🌻Samoyed Franek ☁#2137</div>
+                </div>
+                <label class="switch">
+                    <input
+                        id="switch1"
+                        type="checkbox"
+                        checked
+                        onclick="tooltip()"
+                    />
+                    <span class="slider1 round"></span>
+                </label>
+                <nav class="slidemenu">
+                    <input
+                        type="radio"
+                        name="slideItem"
+                        id="slide-item-1"
+                        class="slide-toggle"
+                        onclick="a()"
+                        checked
+                    />
+                    <label for="slide-item-1"><span>Informacje</span></label>
+
+                    <input
+                        type="radio"
+                        name="slideItem"
+                        id="slide-item-2"
+                        class="slide-toggle"
+                        onclick="b()"
+                    />
+                    <label for="slide-item-2"><span>Portfolio</span></label>
+
+                    <input
+                        type="radio"
+                        name="slideItem"
+                        id="slide-item-3"
+                        class="slide-toggle"
+                        onclick="c()"
+                    />
+                    <label for="slide-item-3"><span>Social Media</span></label>
+
+                    <input
+                        type="radio"
+                        name="slideItem"
+                        id="slide-item-4"
+                        class="slide-toggle"
+                        onclick="d()"
+                    />
+                    <label for="slide-item-4"><span>Blog</span></label>
+
+                    <div class="clear"></div>
+
+                    <div class="slider">
+                        <div class="bar"></div>
+                    </div>
+                </nav>
+                <div id="info" class="info">
+                    INFO Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Maecenas lorem velit, volutpat sit amet magna sit
+                    amet, tincidunt mattis neque. Sed ac felis libero. Nunc
+                    blandit nisi scelerisque, porttitor nulla in, pellentesque
+                    tortor. Vestibulum lacinia, urna non ultricies ornare, lorem
+                    tellus volutpat sapien, semper tristique leo orci imperdiet
+                    sapien. Cras fermentum lorem nibh, vel sollicitudin libero
+                    commodo ut. Donec lectus quam, semper vitae metus vitae,
+                    varius eleifend neque. Cras ultricies faucibus nibh eu
+                    tincidunt.
+                </div>
+                <div id="portfolio" class="portfolio">
+                    PORTFOLIO Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Maecenas lorem velit, volutpat sit amet magna sit
+                    amet, tincidunt mattis neque. Sed ac felis libero. Nunc
+                    blandit nisi scelerisque, porttitor nulla in, pellentesque
+                    tortor. Vestibulum lacinia, urna non ultricies ornare, lorem
+                    tellus volutpat sapien, semper tristique leo orci imperdiet
+                    sapien. Cras fermentum lorem nibh, vel sollicitudin libero
+                    commodo ut. Donec lectus quam, semper vitae metus vitae,
+                    varius eleifend neque. Cras ultricies faucibus nibh eu
+                    tincidunt.
+                </div>
+                <div id="socialmedia" class="socialmedia">
+                    <div class="github"><a id="c">franek444454</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAa9JREFUSEu1VdtxwjAQXJM6SJxPVYHpxFSSUAmiEkwV/ozG1AHOrKzTnOUHdiboh8E+7d7t3p0zvPhkL8bHU4K8LosHULTALgMKAK4FXNb9Xm/G2rkkJwnyuszvwCmAzmG4DbB3xrqxoFGC97r8BvC1Qj6Cnxtjea93BgR/ANeAx5SkR0BZHsDPiszTUMp1cMZW8qJHsK3Li9Lcl81AmqqRMmDXAvmEP64x9nNAsK3LMgNOAfDwrDsEINzbASjlWTDdVxErSLS3G+As7Zlk76thi74BlXRPkPcCIAcQvdAEzD5moUB936uSOQty+LwSsgfgCVqguhm7TyuguWT3pwUmZQozUtCLqaTEB12BJvDdcO+MJOmHlonySacEaVh5b24aYz12JEg6aEmnenlIxuAgj9yzjbGHOZP5zgZtHbNlpnL7DszJw7ChyWGp0SQ5x7DUIjCl0gtual9p/6JEK5YbE5DOOqdG6w7qScQ//7AqoIdsQMAHeqKXOJ3EzC87VcWg7RaQDcBHKxCgFZ6s/+BoEloTBo5T69dE6K7rpttFcTWPVfn0m7xAmtmQlxP8AqN7yBmbN3QfAAAAAElFTkSuQmCC" alt="" id="github"/><a href="https://github.com/samoyedgaming/" style="color:var(--white);transition: color 500ms;"><i id="b" class='bx bx-link-external'></i></a></div>
+                    <div class="spotify"><a id="c">samoyedgaming</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXZJREFUSEu1VdFxQjEMszcpk7RMUpik7SSFSUongU3U0zs75yQOCb0jPxzvOZYlW34qTz765PwyBQBwEJFXK+TNfm8i8isiF1W93CtyCACAyT5ExJOO8hDgqKoE7U4KAODTkj+i4Jeq8l51OgCT5PuRzCGWTE7xbgVgsvxYAAPPIvIuIuyDH0rxcidmF+VqAa7hcqEMYEsYL/KZ/wdAxl4EG7/3agqAJSGAn5OqHlekSnpWWESAtrH72Qg6eCMtHxf2ESDKc1PV3Ur1ASTeLzKNAJblCQBpH0YAVaNWmADg9LkppwyYsxq3GQgAhJgUIFKsGrWQvB2QtMmk5yZzM3FMWU26Zwg8WCv9mFqw+4BGIZg7tuuJJabLPaY4PU5g62RS5SVWzOopG5l1O6Zxb1Sx8k+27FzPdDuGscw2bmfO2brmriebc+vqRPuO5ba/RhPSfHA6NgGARfB9+mVb+WRu5kkYsLncqP/7ZM5mf/X9lMFqolHcHxy7xRmWb7BGAAAAAElFTkSuQmCC" alt="" id="spotify"/><a href="https://open.spotify.com/user/franek444454" style="color:var(--white);transition: color 500ms;"><i id="bb" class='bx bx-link-external'></i></div>
+                    <div class="steam"><a id="c">samoyedfranek</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWtJREFUSEtjZKAxYKSx+QxYLej3+K/A/Jdh/n9GBgdSHfD+FwNrwwHGPzB9GBYgGy6qzHBE2Yo4K94+YPh7+zCDPV4L0F3u08BwQcmSwYAYK+4dZ7iwpYHBAK8Fk1z/70cOFnQLfnyGWMXBC6GR+URZMNHt/39k16JbsDKXgUFQloHBrQyiamECA4OSJQODbToDw6gF4CCheRC9uAEJewkNCI3Mp0oc4Euuy7MYjry+y2CDN5kSSkW4LIAZzvif4UDebkZHZHUoOZkcC/AZDrIIrwVMzAxPYK5RtmK461nDYA8K623NDCIg8X9/GWTAhmBxOdayCN0HyF5VtWU4qO7MwA8qDlCCAI/hBH2AbBAnP8OF7x9JM5wkC9AjGF+w4IzkSa7/E9AMiocVfiADQcUPTD5vN+MCfMkWaxyga4CVrsS6FpuFeKtMkAUgTehpmxiXE+WDiW7/G/J3MTaQYiBGXFGimRi9NG9VAAAUnvEZ7mGFVwAAAABJRU5ErkJggg==" alt="" id="twitch"/><a href="https://twitch.tv/samoyedfranek" style="color:var(--white);transition: color 500ms;"></a><i id="bbb" class='bx bx-link-external'></i></div>
+                    <div class="twitch"><a id="c">SamoyedFranek</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZRJREFUSEu1leFtQjEMhH2TlE7SMgkwScskwCTAJKWTuPqi5Mkkj+RVCEuIHyF38d3ZyF5cejG+DQncfWtmKzP7MLNPM7uFz1XSsffIhwTuDughg/YwIFxL4rupWQJ3/zazr3/IB/hJEvfuqiHIkvDyURWp6JQPta9J7gjcHY3PA2SAd5Iu/C5LiU90fHfGeU0AOCS9WudDAK9m9iZpF2S9SXovABPBUmkkyd3PkhJR6IA0/WRgTE8dRoIlxu7NDKBt1NrdD7kLr72IBCN5Uushvvhwy75tKoJL6bCWaNPxYGo7k+BBSg9gyBbvImVjctCUyySjVBO/chDI4u8no0eTTKIwa1VMC8C9SB+RrDYZkNlxzxFEijSpCyZ9loAXMcGzIx+SMgoDb2hjml9WLtMJkSQNqSsI8mCN1siUoLlJjrqmsTczkkVaTnkdlL3zaNqn1z9KURw4SDD5d+F27S+7kJAlU113wOA1fz69mCIX8zBafs0GjcxL/jLRnCHCi1h4Qhxno91s095+fuZs2MEz4Nz9A966zBnSHNSrAAAAAElFTkSuQmCC" alt="" id="steam"/><a href="https://steamcommunity.com/id/samoyedfranek/" style="color:var(--white);transition: color 500ms;"><i id="bbbb" class='bx bx-link-external'></i></div>
+                    <div class="twitter"><a id="c">Samoyed Franek</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVdJREFUSEvtlbFOwzAQhn+brTsSY5FaJUG8A+2btC+BxMjCwNwqFUsoPAHiAdqZiQElQUEiMMGQVi0TCs0hR01oqRMHkWz1Ysm5u8/5ff7NUPFgFdfHFqBUeE0iR9frPOIdIjpiYPVldjLLivnJIoF8BuZHxIfG08M4WU8BTuOwxVk0Um5JHSAg3QSSAh6bBxaAjjpfHUGgse45bRG5CngGkCeHuvJPhK959n5hAK/VsHtyjKBv4uvtvQhICqCsTAFo3N+BwhBBz8TEvFBCNM+O1VmVSAlIqoYvrzFofnObCfoXIJp/xHJNravyAdPhNSa9ARazWa5Msj/I7CJxBnvnZwj6A3w6rlJ/AJuH7DaNEQNrFclWxUjvQZkAAJeaZ3fXuqhEq0BEvL1hFYImzI4tmLU0ur/c6tj0hOER7ZxKzS5PVwH+/d1w3dRJ83K3L5qqY6t/9L8BbQ6TGYhfw4MAAAAASUVORK5CYII=" alt="" id="youtube"/><a href="https://www.youtube.com/channel/UCm85GFqdoywjqZOKrWSQwJg" style="color:var(--white);transition: color 500ms;"><i id="bbbbb" class='bx bx-link-external'></i></div>
+                    <div class="youtube"><a id="c">SamoyedFranek</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXJJREFUSEvlVEtSg0AQfQ3ZiuVeLHITcpEQTmI4CZCLhJs4Je4tcZuhrcYQITNDiGVWsqFqPv0+/aYJN/7oxvXxTwEe88+YiBMQYhAUWiifdabSBxXumg1rUm/pXSX2jywKy4b9Vi/loKs3Uf4eac9/sex/3yGoeh2s+v0TwPAit7TqGZwXCnfNHozYGQ5GwUylocBgxih62X2xCfY/eIS0XgeFoUAWwrIR6dGIHaFiTdkCB3XAIiKP9xPRVnUSLIf7ox50zfM4N0DmP5ZpAGkyAGnWWMVcAEI1bLAtRaZFc4t3AeLsNbnfOi06NlE8/pUCW8SNUdGB+H4+GUW7KsN/wyJZeCo/tgx6vsKZ7qjr7ViH3dUgjKLeBKmNlHOaSmQ9r41nqLFaY31oQwYytMAQq9wNt8TyXMVJwYBxcjw0mSRbJC9aNBrDNuYEGcGlr3U1NXGd7+CcgQDKmswh+c8tOhvg2qhetOgvCjqbfIviUvML1gakGW71W3oAAAAASUVORK5CYII=" alt="" id="twitter"/><a href="https://twitter.com/samoyedfranek" style="color:var(--white);transition: color 500ms;"><i id="bbbbbb" class='bx bx-link-external'></i></div>
+                </div>
+                <div id="blog" class="blog">
+                    BLOG Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Maecenas lorem velit, volutpat sit amet magna sit
+                    amet, tincidunt mattis neque. Sed ac felis libero. Nunc
+                    blandit nisi scelerisque, porttitor nulla in, pellentesque
+                    tortor. Vestibulum lacinia, urna non ultricies ornare, lorem
+                    tellus volutpat sapien, semper tristique leo orci imperdiet
+                    sapien. Cras fermentum lorem nibh, vel sollicitudin libero
+                    commodo ut. Donec lectus quam, semper vitae metus vitae,
+                    varius eleifend neque. Cras ultricies faucibus nibh eu
+                    tincidunt.
+                </div>
+            </div>
+        </center>
+
+        <!-- Skrypty js -->
+        <script src="js/tooltip.js"></script>
+        <script src="js/buttons.js"></script>
+        <!-- Skrypty js koniec-->
+    </body>
+</html>
+
+<!-- Copyright 🌻Samoyed Franek ☁#2137 -->
