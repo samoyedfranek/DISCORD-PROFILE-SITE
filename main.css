@@ -334,7 +334,7 @@ body[data-theme="dark"] {
 .slidemenu {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-    max-width: 600px;
+    max-width: 1000px;
     min-width: 390px;
     margin: 50px auto;
     overflow: hidden;
